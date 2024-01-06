@@ -24,11 +24,17 @@ class MyHome extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15)),
                 ),
               ),
+              const SizedBox(
+                height: 20,
+              ),
               ElevatedButton(
                   onPressed: () {
                     pro.adddatas();
                   },
-                  child: Text("press")),
+                  child: const Text("press")),
+              const SizedBox(
+                height: 20,
+              ),
               Expanded(
                 child: ListView.builder(
                   itemCount: pro.data.length,
